@@ -46,9 +46,9 @@ Socket.prototype.onMessage = function (msg) {
 
 
 server.listen(HTTP_PORT, () => {
-    console.log('server started at 80');
+    console.log("server started at " + HTTP_PORT);
 });
 
 secureServer.listen(HTTPS_PORT, () => {
-    console.log("secure server started at 443");
+    console.log("secure server started at " HTTPS_PORT);
 })
